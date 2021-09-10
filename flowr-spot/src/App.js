@@ -2,7 +2,7 @@
 function App() {
   return (
       <header className="App-header">
-       <h>HELLO JETON</h>
+       <h>HELLO JETONI</h>
       </header>
   );
 }
