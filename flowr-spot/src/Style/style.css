@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 .header{
   display: flex;
   align-items: center;
@@ -46,4 +50,75 @@
 }
 .newAccButton:hover{
   cursor: pointer;
+}
+
+.topContent{
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.bgImage{
+  background: url("../pl-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topText{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-family: Montserrat;
+  font-size: 40px;
+  margin-top:154px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.midText{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 17px;
+  opacity: 0.7;
+  line-height: 17px;
+}
+
+.searchBar{
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.searchButton{
+  border: none;
+  background-repeat: no-repeat;
+  margin-left: -38px;
+  height: 20px;
+  width: 20px;
+  background: url("../pl-icon-search.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.searchButton:hover{
+  cursor: pointer;
+}
+
+.inputBar{
+  border: none;
+  width: 600px;
+  height: 70px;
+  border-radius: 3px;
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+.inputBar::placeholder{
+  font-family: Ubuntu;
+  font-weight: 300;
+  font-size: 20px;
 }
