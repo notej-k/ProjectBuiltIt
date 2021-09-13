@@ -122,3 +122,18 @@
   font-weight: 300;
   font-size: 20px;
 }
+
+.imageGallery{
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.singleImage img{
+  display: flex;
+  width: 380px;
+  height: 450px;
+  padding: 30px;
+}
