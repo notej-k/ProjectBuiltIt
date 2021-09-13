@@ -1,0 +1,14 @@
+.header{
+  display: flex;
+}
+
+.flowerLogo{
+  display: flex;
+  margin-left: 28px;
+  margin-top: 28px;
+}
+
+.flowersText{
+  margin-top: 33px;
+  margin-left: 12px;
+}
