@@ -12,3 +12,19 @@
   margin-top: 33px;
   margin-left: 12px;
 }
+
+.headerItems{
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.headerItem{
+  font-family: sans-serif;
+  margin-left: 80px;
+  margin-top: 25px;
+  
+}
+.headerItem a{
+  text-decoration: none;
+  color:#949EA0;
+}
