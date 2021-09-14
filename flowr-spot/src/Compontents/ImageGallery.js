@@ -1,12 +1,11 @@
 import React from "react";
 import ImageComponent from "./ImageComponent";
-import image from '../pl-image.png'
 
 function ImageGallery(){
     let gallery = [];
 
     for(let i = 0; i < 8; i++){
-      gallery.push(<ImageComponent url={image}></ImageComponent>)
+      gallery.push(<ImageComponent></ImageComponent>)
     }
 
   return(
