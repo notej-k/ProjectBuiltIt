@@ -5,7 +5,7 @@ function ImageGallery(){
     let gallery = [];
 
     for(let i = 0; i < 8; i++){
-      gallery.push(<ImageComponent></ImageComponent>)
+      gallery.push(<ImageComponent key={i}></ImageComponent>)
     }
 
   return(
