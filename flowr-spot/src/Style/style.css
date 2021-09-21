@@ -59,6 +59,7 @@
 }
 
 .bgImage{
+  height: 650px;
   background: url("../pl-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +127,6 @@
 .imageGallery{
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   margin-top: 30px;
 }
 
@@ -200,5 +200,19 @@
   border: none;
   background-color: gray;
   align-items: center;
+}
 
+.createAccountModalContainer{
+  z-index: 1;
+  width: 50%;
+  height: 500px;
+  border: 1px solid red;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  top: 25%;
+  left: 25%;
+  right: 25%;
 }

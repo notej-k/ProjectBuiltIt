@@ -8,6 +8,7 @@ function App() {
         <Logo></Logo>
         <TopContent />
         <ImageGallery />
+       
       </header>
   );
 }
