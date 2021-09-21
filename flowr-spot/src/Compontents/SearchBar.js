@@ -8,7 +8,7 @@ const SearchBar = () => (
           type="text"
           id="header-search"
           placeholder="Looking for something specific?"
-          name="s" 
+          name="inputData" 
           className="inputBar"
       />
       <button  className="searchButton"></button>
