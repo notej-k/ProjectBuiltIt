@@ -15,12 +15,12 @@ function HeaderItems() {
       <button
         className="newAccButton"
         onClick={() => {
-          LogInVisibility? setLogInVisibility(false) : setLogInVisibility(true);
+          setLogInVisibility(true);
         }}
       >
         New Account
       </button>
-      <div>{LogInVisibility ? <CreateAccountModal /> : <div></div>} </div>
+      <div>{LogInVisibility ? <CreateAccountModal changeState={LogInVisibility => setLogInVisibility(LogInVisibility)} /> : <div></div>} </div>
     </div>
   );
 }
