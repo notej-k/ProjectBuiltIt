@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+
+.body{
+  background-blend-mode: darken;
+}
+
 .header{
   display: flex;
   align-items: center;
@@ -11,12 +16,14 @@
   display: flex;
   margin-left: 28px;
   margin-top: 28px;
+  height: 30px;
 }
 
 .flowersText{
   margin-top: 33px;
   margin-left: 12px;
 }
+
 
 .headerItems{
   display: flex;
@@ -31,6 +38,7 @@
   
 }
 .headerItem a{
+  font-size: 20px;
   text-decoration: none;
   color:#949EA0;
 }
@@ -40,6 +48,7 @@
 }
 
 .newAccButton {
+  font-size: 15px;
   background-color: #DF9186;
   border: none;
   color: white;
@@ -128,18 +137,18 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  justify-content: center;
 }
 
 
 .flowerType{
   display: flex;
+  flex-direction: column;
   color: white;
-  position: absolute;
   line-height: 15px;
   font-size: 20px;
   font-family: Ubuntu;
-  margin-top: 279px;
-  margin-left: 233px;
+  
 }
 
 .imageGradient{
@@ -156,25 +165,21 @@
 .flowerDescription{
   display: flex;
   color: white;
-  position: absolute;
   line-height: 15px;
   font-family: Ubuntu;
   font-style: italic;
-  margin-top: 309px;
-  margin-left: 235px;
-  font-size: 12px;
   opacity: 0.7;
+  justify-content: center;
 }
 
 .sightingsButton{
   display: flex;
+  justify-content: center;
   color: white;
-  position: absolute;
+  margin-top: 29px;
   line-height: 15px;
   font-size: 20px;
   font-family: Ubuntu;
-  margin-top: 329px;
-  margin-left: 253px;
   border: none;
   border-radius: 20px;
   font-size: 15px;
@@ -187,32 +192,154 @@
   cursor: pointer;
 }
 
+.starButtonWrapper {
+  display: flex;
+  justify-content: end;
+  margin: 20px 20px 196px 0;
+}
+
 .starButton{
   display: flex;
   background: url("../Fill\ 1.svg");
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 390px;
+  /* position: absolute; */
   border-radius: 100%;
   border: none;
   background-color: gray;
   align-items: center;
 }
 
+.detailWrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .createAccountModalContainer{
   z-index: 1;
-  width: 50%;
-  height: 500px;
-  border: 1px solid red;
+  width: 33%;
+  height: 560px;
+  margin: auto;
   background-color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   position:fixed;
   top: 25%;
   left: 25%;
   right: 25%;
+  border-radius: 3px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
 }
+
+.modalContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.modalHeader{
+  font-family: ubuntu;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.accountHeader{
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #334144;
+}
+
+.nameAndLastName{
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstNameInput{
+  margin-right: 5%;
+  width: 50%;
+}
+
+.firstNameInput input{
+  height: 60px;
+  background-color: #F5F6F7;
+  border-radius: 3px;
+  border: 1px solid #DFE5EA;
+  width: 100%;
+}
+
+.lastNameInput{
+  width: 50%;
+}
+
+.lastNameInput input{
+  height: 60px;
+  background-color: #F5F6F7;
+  border-radius: 3px;
+  border: 1px solid #DFE5EA;
+  width: 100%;
+}
+
+.DOBInput input{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  background-color: #F5F6F7;
+  border-radius: 3px;
+  border: 1px solid #DFE5EA
+}
+
+.passwordInput input{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  background-color: #F5F6F7;
+  border-radius: 3px;
+  border: 1px solid #DFE5EA
+}
+
+.emailInput input{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  background-color: #F5F6F7;
+  border-radius: 3px;
+  border: 1px solid #DFE5EA
+}
+
+.submitForm{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  margin-top: 10px;
+}
+
+.submitForm :hover{
+  cursor: pointer;
+}
+
+.submitForm input{
+  width: 100%;
+  border-radius: 3px;
+  color: white;
+  background: linear-gradient(
+  270deg, #ECBCB3 0%, #EAA79E 100%);
+  border: none;
+}
+
+.form input{
+  font-size: 15px;
+}
+
