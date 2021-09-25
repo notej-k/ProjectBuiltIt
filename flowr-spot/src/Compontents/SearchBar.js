@@ -6,7 +6,6 @@ const SearchBar = () => (
     <form action="/" method="get">
       <input
           type="text"
-          id="header-search"
           placeholder="Looking for something specific?"
           name="inputData" 
           className="inputBar"
