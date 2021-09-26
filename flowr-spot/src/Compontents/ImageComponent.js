@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ImageDiv = styled.div`
-  background-image: url("${({ image }) => image}");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.7) 89.5%),url("${({ image }) => image}");
   width: 280px;
   height: 350px;
   background-size: cover;

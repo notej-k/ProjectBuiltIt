@@ -1,15 +1,20 @@
 import React from "react";
 import "../Style/style.css";
 
-function CreateAccountModal({changeState}) {
-
-
+function CreateAccountModal({ changeState }) {
   return (
     <div className="modalBackground">
       <div className="createAccountModalContainer">
-      <div className="closeButton"> <button onClick={()=>{
-            changeState(false)
-      }}>x</button></div>
+        <div className="closeButton">
+          {" "}
+          <button
+            onClick={() => {
+              changeState(false);
+            }}
+          >
+            x
+          </button>
+        </div>
         <div className="modalContainer">
           <h2 className="accountHeader">Create an Account</h2>
           <form className="form" method="POST">
@@ -39,6 +44,5 @@ function CreateAccountModal({changeState}) {
     </div>
   );
 }
-  
 
 export default CreateAccountModal;
