@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
-.body{
-  background-blend-mode: darken;
-}
 
 .header{
   display: flex;
@@ -56,8 +53,6 @@
   border-radius: 40px;
   margin-left: 20px;
   margin-top: 20px;
-}
-.newAccButton:hover{
   cursor: pointer;
 }
 
@@ -112,9 +107,6 @@
   background: url("../pl-icon-search.svg");
   background-repeat: no-repeat;
   background-color: white;
-}
-
-.searchButton:hover{
   cursor: pointer;
 }
 
@@ -148,18 +140,8 @@
   line-height: 15px;
   font-size: 20px;
   font-family: Ubuntu;
+  align-self: center;
   
-}
-
-.imageGradient{
-  display: flex;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.7) 89.5%),url("../pl-image.png");
-  width: 280px;
-  height: 350px;
-  background-repeat: no-repeat;
-  margin-top: 30px;
-  margin-left: 155px;
-  margin-bottom: 10px;
 }
 
 .flowerDescription{
@@ -170,6 +152,7 @@
   font-style: italic;
   opacity: 0.7;
   justify-content: center;
+  margin-top: 7px;
 }
 
 .sightingsButton{
@@ -186,10 +169,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   height: 30px;
-}
-
-.sightingsButton:hover{
-  cursor: pointer;
 }
 
 .starButtonWrapper {
@@ -220,7 +199,7 @@
 .createAccountModalContainer{
   z-index: 1;
   width: 33%;
-  height: 560px;
+  height: 500px;
   margin: auto;
   background-color: white;
   display: flex;
@@ -245,16 +224,38 @@
   font-family: ubuntu;
 }
 
+.modalBackground{
+  width: 100%;
+  height: 150vh;
+  background-color:   rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closeButton{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.closeButton button{
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
 .form{
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 85%;
 }
 
 .accountHeader{
-  margin-top: 30px;
+  margin-top: 0;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 26px;
   color: #334144;
 }
 
@@ -292,7 +293,7 @@
   display: flex;
   width: 100%;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #F5F6F7;
   border-radius: 3px;
   border: 1px solid #DFE5EA
@@ -302,7 +303,7 @@
   display: flex;
   width: 100%;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #F5F6F7;
   border-radius: 3px;
   border: 1px solid #DFE5EA
@@ -312,7 +313,7 @@
   display: flex;
   width: 100%;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #F5F6F7;
   border-radius: 3px;
   border: 1px solid #DFE5EA
@@ -323,11 +324,7 @@
   justify-content: center;
   width: 100%;
   height: 65px;
-  margin-top: 10px;
-}
-
-.submitForm :hover{
-  cursor: pointer;
+  margin-top: 15px;
 }
 
 .submitForm input{
@@ -337,6 +334,7 @@
   background: linear-gradient(
   270deg, #ECBCB3 0%, #EAA79E 100%);
   border: none;
+  cursor: pointer;
 }
 
 .form input{
