@@ -1,52 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
-
-
-.header{
+.header {
   display: flex;
   align-items: center;
 }
 
-.flowerLogo{
+.flowerLogo {
   display: flex;
   margin-left: 28px;
   margin-top: 28px;
   height: 30px;
 }
 
-.flowersText{
+.flowersText {
   margin-top: 33px;
   margin-left: 12px;
 }
 
-
-.headerItems{
+.headerItems {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 40px;
 }
-.headerItem{
+.headerItem {
   font-family: sans-serif;
   margin-left: 80px;
   margin-top: 25px;
-  
 }
-.headerItem a{
+.headerItem a {
   font-size: 20px;
   text-decoration: none;
-  color:#949EA0;
+  color: #949ea0;
 }
 
-.loginButton a{
-  color: #DF9186;
+.loginButton a {
+  color: #df9186;
 }
 
 .newAccButton {
   font-size: 15px;
-  background-color: #DF9186;
+  background-color: #df9186;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -56,48 +52,48 @@
   cursor: pointer;
 }
 
-.topContent{
+.topContent {
   display: flex;
   flex-direction: column;
   margin-top: 34px;
 }
 
-.bgImage{
+.bgImage {
   height: 650px;
   background: url("../pl-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.topText{
+.topText {
   display: flex;
   justify-content: center;
-  color:white;
+  color: white;
   font-family: Montserrat;
   font-size: 40px;
-  margin-top:154px;
+  margin-top: 154px;
   font-weight: 600;
   line-height: 40px;
 }
 
-.midText{
+.midText {
   display: flex;
   justify-content: center;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-family: Playfair Display;
   font-weight: 400;
   font-size: 17px;
   line-height: 17px;
 }
 
-.searchBar{
+.searchBar {
   display: flex;
   margin-top: 40px;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.searchButton{
+.searchButton {
   border: none;
   background-repeat: no-repeat;
   margin-left: -38px;
@@ -109,7 +105,7 @@
   cursor: pointer;
 }
 
-.inputBar{
+.inputBar {
   border: none;
   width: 600px;
   height: 70px;
@@ -118,21 +114,20 @@
   padding-left: 15px;
 }
 
-.inputBar::placeholder{
+.inputBar::placeholder {
   font-family: Ubuntu;
   font-weight: 300;
   font-size: 20px;
 }
 
-.imageGallery{
+.imageGallery {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: center;
 }
 
-
-.flowerType{
+.flowerType {
   display: flex;
   flex-direction: column;
   color: white;
@@ -140,10 +135,9 @@
   font-size: 20px;
   font-family: Ubuntu;
   align-self: center;
-  
 }
 
-.flowerDescription{
+.flowerDescription {
   display: flex;
   color: white;
   line-height: 15px;
@@ -154,7 +148,7 @@
   margin-top: 7px;
 }
 
-.sightingsButton{
+.sightingsButton {
   display: flex;
   justify-content: center;
   color: white;
@@ -176,7 +170,7 @@
   margin: 20px 20px 196px 0;
 }
 
-.starButton{
+.starButton {
   display: flex;
   background: url("../Fill\ 1.svg");
   background-repeat: no-repeat;
@@ -195,7 +189,7 @@
   align-self: center;
 }
 
-.createAccountModalContainer{
+.createAccountModalContainer {
   z-index: 1;
   width: 33%;
   height: 520px;
@@ -204,7 +198,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  position:fixed;
+  position: fixed;
   top: 25%;
   left: 25%;
   right: 25%;
@@ -212,143 +206,143 @@
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
 }
 
-.modalContainer{
+.modalContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.modalHeader{
+.modalHeader {
   font-family: ubuntu;
 }
 
-.modalBackground{
+.modalBackground {
   width: 100%;
-  background-color:   rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
 }
 
-.closeButton{
+.closeButton {
   display: flex;
   width: 100%;
   justify-content: flex-end;
 }
 
-.closeButton button{
+.closeButton button {
   border: none;
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   width: 85%;
 }
 
-.accountHeader{
+.accountHeader {
   margin-top: 0;
   font-weight: 500;
   font-size: 26px;
   color: #334144;
 }
 
-.inputDescriber{
+.inputDescriber {
   position: absolute;
   margin-top: 0px;
   font-family: Ubuntu;
-  color: #949EA0;
+  color: #949ea0;
   margin-top: 5px;
   margin-left: 15px;
 }
 
-.inputDescriberBottom{
+.inputDescriberBottom {
   position: absolute;
   margin-left: 15px;
   font-family: Ubuntu;
-  color: #949EA0;
+  color: #949ea0;
   margin-top: 21px;
 }
 
-.nameAndLastName{
+.nameAndLastName {
   display: flex;
   justify-content: space-between;
 }
 
-.firstNameInput{
+.firstNameInput {
   color: white;
 }
 
-.inputText{
+.inputText {
   padding-top: 5px;
   padding-left: 15px;
   font-family: Ubuntu;
 }
 
-.firstNameInput input{
+.firstNameInput input {
   height: 60px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   border-radius: 3px;
-  border: 1px solid #DFE5EA;
+  border: 1px solid #dfe5ea;
   width: 99%;
 }
 
-.lastNameInput{
+.lastNameInput {
   width: 46%;
 }
 
-.firstNameWrapper{
+.firstNameWrapper {
   width: 46%;
 }
 
-.lastNameWrapper{
+.lastNameWrapper {
   width: 46%;
 }
 
-.lastNameInput input{
+.lastNameInput input {
   height: 60px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   border-radius: 3px;
-  border: 1px solid #DFE5EA;
+  border: 1px solid #dfe5ea;
   width: 92%;
 }
 
-.DOBInput input{
+.DOBInput input {
   display: flex;
   width: 96%;
   height: 60px;
   margin-top: 15px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   border-radius: 3px;
-  border: 1px solid #DFE5EA
+  border: 1px solid #dfe5ea;
 }
 
-.passwordInput input{
+.passwordInput input {
   display: flex;
   width: 96%;
   height: 60px;
   margin-top: 15px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   border-radius: 3px;
-  border: 1px solid #DFE5EA
+  border: 1px solid #dfe5ea;
 }
 
-.emailInput input{
+.emailInput input {
   display: flex;
   width: 96%;
   height: 60px;
   margin-top: 15px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   border-radius: 3px;
-  border: 1px solid #DFE5EA
+  border: 1px solid #dfe5ea;
 }
 
-.submitForm{
+.submitForm {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -357,19 +351,17 @@
   font-size: 20px;
 }
 
-.form input{
+.form input {
   font-size: 18px;
   font-family: Ubuntu;
 }
 
-.submitForm input{
+.submitForm input {
   width: 100%;
   border-radius: 3px;
   color: white;
-  background: linear-gradient(
-  270deg, #ECBCB3 0%, #EAA79E 100%);
+  background: linear-gradient(270deg, #ecbcb3 0%, #eaa79e 100%);
   border: none;
   cursor: pointer;
   font-size: 20px;
 }
-
