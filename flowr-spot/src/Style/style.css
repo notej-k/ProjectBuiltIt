@@ -199,7 +199,7 @@
 .createAccountModalContainer{
   z-index: 1;
   width: 33%;
-  height: 500px;
+  height: 520px;
   margin: auto;
   background-color: white;
   display: flex;
@@ -226,7 +226,7 @@
 
 .modalBackground{
   width: 100%;
-  height: 150vh;
+  height: 180vh;
   background-color:   rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -259,14 +259,36 @@
   color: #334144;
 }
 
+.inputDescriber{
+  position: absolute;
+  margin-top: 0px;
+  font-family: Ubuntu;
+  color: #949EA0;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.inputDescriberBottom{
+  position: absolute;
+  margin-left: 15px;
+  font-family: Ubuntu;
+  color: #949EA0;
+  margin-top: 21px;
+}
+
 .nameAndLastName{
   display: flex;
   justify-content: space-between;
 }
 
 .firstNameInput{
-  margin-right: 5%;
-  width: 50%;
+  color: white;
+}
+
+.inputText{
+  padding-top: 5px;
+  padding-left: 15px;
+  font-family: Ubuntu;
 }
 
 .firstNameInput input{
@@ -274,11 +296,19 @@
   background-color: #F5F6F7;
   border-radius: 3px;
   border: 1px solid #DFE5EA;
-  width: 100%;
+  width: 99%;
 }
 
 .lastNameInput{
-  width: 50%;
+  width: 46%;
+}
+
+.firstNameWrapper{
+  width: 46%;
+}
+
+.lastNameWrapper{
+  width: 46%;
 }
 
 .lastNameInput input{
@@ -286,12 +316,12 @@
   background-color: #F5F6F7;
   border-radius: 3px;
   border: 1px solid #DFE5EA;
-  width: 100%;
+  width: 92%;
 }
 
 .DOBInput input{
   display: flex;
-  width: 100%;
+  width: 96%;
   height: 60px;
   margin-top: 15px;
   background-color: #F5F6F7;
@@ -301,7 +331,7 @@
 
 .passwordInput input{
   display: flex;
-  width: 100%;
+  width: 96%;
   height: 60px;
   margin-top: 15px;
   background-color: #F5F6F7;
@@ -311,7 +341,7 @@
 
 .emailInput input{
   display: flex;
-  width: 100%;
+  width: 96%;
   height: 60px;
   margin-top: 15px;
   background-color: #F5F6F7;
@@ -325,6 +355,12 @@
   width: 100%;
   height: 65px;
   margin-top: 15px;
+  font-size: 20px;
+}
+
+.form input{
+  font-size: 18px;
+  font-family: Ubuntu;
 }
 
 .submitForm input{
@@ -335,9 +371,6 @@
   270deg, #ECBCB3 0%, #EAA79E 100%);
   border: none;
   cursor: pointer;
-}
-
-.form input{
-  font-size: 15px;
+  font-size: 20px;
 }
 
