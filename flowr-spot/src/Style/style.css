@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
+
+
 .header {
   display: flex;
   align-items: center;
@@ -365,26 +367,31 @@
   border: 1px solid #dfe5ea;
 }
 
-.submitForm {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 65px;
-  margin-top: 15px;
-  font-size: 20px;
-}
-
 .form input {
   font-size: 18px;
   font-family: Ubuntu;
 }
 
-.submitForm input {
+.submitForm {
   width: 100%;
-  border-radius: 3px;
-  color: white;
-  background: linear-gradient(270deg, #ecbcb3 0%, #eaa79e 100%);
   border: none;
   cursor: pointer;
   font-size: 20px;
+  margin-top: 20px;
 }
+
+.submitButton{
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  background: linear-gradient(270deg, #ecbcb3 0%, #eaa79e 100%);
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+

@@ -1,7 +1,16 @@
 import React from "react";
+import {ToastContainer, toast} from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import "../Style/style.css";
 
 function CreateAccountModal({ changeState }) {
+
+  const succesToast = ()=>{
+    toast("Congratulations! You have successfully signed up for FlowrSpot!",{
+    position: toast.POSITION.TOP_RIGHT
+    });
+  }
+
   return (
     <div className="modalBackground">
       <div className="createAccountModalContainer">
@@ -17,7 +26,7 @@ function CreateAccountModal({ changeState }) {
         </div>
         <div className="modalContainer">
           <h2 className="accountHeader">Create an Account</h2>
-          <form className="form" method="POST">
+          <form className="form">
             <div className="nameAndLastName">
               <div className="firstNameWrapper">
                 <div>
@@ -59,7 +68,8 @@ function CreateAccountModal({ changeState }) {
             </label>
             </div>
             <div className="submitForm">
-              <input type="submit" value="Create Account" className="submitButton"/>
+              <button type="button" className="submitButton" onClick={succesToast}>Create Account</button>
+              <ToastContainer></ToastContainer>
             </div>
           </form>
         </div>

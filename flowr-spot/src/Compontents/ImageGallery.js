@@ -17,8 +17,6 @@ function ImageGallery() {
       try {
         const result = await fetch(URL, options);
         const json = await result.json();
-        console.log('json: ', json);
-
         setGalleryImages(json.flowers);
 
       } catch (err) {
@@ -27,21 +25,16 @@ function ImageGallery() {
     })();
   }, []);
 
-  console.log("gal",galleryImages)
-
   if(!galleryImages) {
     return <div>no data</div>
   }
-
-  const img = galleryImages[0];
-  console.log(img)
 
   return (
     <div className="imageGallery">
 
 
        {galleryImages.map((img) =>  (
-          <div>
+          <div key={img.id}>
           <ImageComponent
             url={img.profile_picture}
             name={img.name}
