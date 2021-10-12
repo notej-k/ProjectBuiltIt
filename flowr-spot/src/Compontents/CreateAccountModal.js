@@ -6,7 +6,7 @@ import "../Style/style.css";
 function CreateAccountModal({ changeState }) {
 
   const succesToast = ()=>{
-    toast("Congratulations! You have successfully signed up for FlowrSpot!",{
+    toast.success("Congratulations! You have successfully signed up for FlowrSpot!",{
     position: toast.POSITION.TOP_RIGHT
     });
   }
@@ -46,7 +46,6 @@ function CreateAccountModal({ changeState }) {
 
               </div>
             </div>
-
             <div className="DOBWrapper">
             <div>
                   <p className="inputDescriberBottom">Date of Birth</p>
@@ -68,13 +67,17 @@ function CreateAccountModal({ changeState }) {
             </label>
             </div>
             <div className="submitForm">
-              <button type="button" className="submitButton" onClick={succesToast}>Create Account</button>
-              <ToastContainer></ToastContainer>
+              <button type="button" className="submitButton" onClick={()=>{
+                changeState(false);
+                succesToast();  
+              }}>Create Account</button>
+                       
             </div>
           </form>
         </div>
       </div>
     </div>
+    
   );
 }
 

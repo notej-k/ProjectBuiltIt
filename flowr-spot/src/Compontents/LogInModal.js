@@ -1,14 +1,14 @@
 import React from "react";
-import {ToastContainer, toast} from 'react-toastify';
+import {toast} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import "../Style/style.css";
 
 function LogInModal({ changeState }) {
 
-  const succesToast = ()=>{
-    toast("Congratulations! You have successfully logged into FlowrSpot!",{
+  const  succesToast = async()=>{
+    toast.success("Congratulations! You have successfully logged into FlowrSpot!",{
     position: toast.POSITION.TOP_RIGHT
-    });
+    })
   }
   
   return (
@@ -30,7 +30,7 @@ function LogInModal({ changeState }) {
             <div className="emailWrapper">
               <p className="inputDescriberBottom">Email</p>
             <div className="emailInput">
-              <input type="text" name="email" className="inputText"/>
+              <input type="text" name="email" className="inputText" required/>
             </div>
             </div>
             <div className="passwordWrapper">
@@ -40,8 +40,10 @@ function LogInModal({ changeState }) {
             </label>
             </div>
             <div className="submitForm">
-              <button type="button" className="submitButton" onClick={succesToast}>Login to your Account</button>
-              <ToastContainer></ToastContainer>
+              <button type="button" className="submitButton" onClick={()=>{
+                changeState(false);
+                succesToast();
+              }}>Login to your Account</button>
             </div>
           </form>
         </div>

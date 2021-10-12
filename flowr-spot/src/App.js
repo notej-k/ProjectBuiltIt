@@ -1,6 +1,7 @@
 import Logo from '../src/Compontents/HeaderComponent'
 import TopContent from './Compontents/TopContent'
 import ImageGallery from './Compontents/ImageGallery';
+import {ToastContainer} from 'react-toastify';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <Logo></Logo>
         <TopContent />
         <ImageGallery />
-       
+        <ToastContainer />
       </header>
   );
 }
